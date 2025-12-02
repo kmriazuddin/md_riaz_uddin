@@ -40,12 +40,14 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p
-            className="text-xl md:text-3xl text-italianno tracking-wider"
-            style={{ fontWeight: "bold" }}
-          >
-            Md Riaz Uddin
-          </p>
+          <Link href="/">
+            <p
+              className="text-xl md:text-3xl text-italianno tracking-wider"
+              style={{ fontWeight: "bold" }}
+            >
+              Md Riaz Uddin
+            </p>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold">
