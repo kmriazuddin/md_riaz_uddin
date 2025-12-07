@@ -18,6 +18,7 @@ const PoweredBy = () => {
           height={500}
           alt="Powered By"
           className="mx-auto"
+          unoptimized
         />
       </div>
     </div>

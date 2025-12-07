@@ -4,7 +4,7 @@ import { FcIdea } from "react-icons/fc";
 
 const HomePage = () => {
   return (
-    <div className="relative overflow-hidden py-20  lg:py-28 px-6 md:px-10 z-10">
+    <div className="relative overflow-hidden py-20 lg:py-28 px-6 md:px-10 z-10">
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10 bg-white dark:bg-slate-950 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px), linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
         <div className="absolute left-1/2 top-10 -z-10 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-fuchsia-400 opacity-20 blur-[120px]"></div>
@@ -40,11 +40,11 @@ const HomePage = () => {
 
           <p className="text-md md:text-lg text-justify text-slate-950 dark:text-white leading-8">
             Building with{" "}
-            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-md px-1 text-white">
+            <span className="bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 rounded-md px-1 text-white">
               TypeScript, PostgreSQL, Prisma, Express, Mongoose,
             </span>{" "}
             and{" "}
-            <span className="bg-gradient-to-r from-[#58c4dc] to-[#000000] rounded-md px-1 text-white">
+            <span className="bg-linear-to-r from-[#58c4dc] to-[#000000] rounded-md px-1 text-white">
               React | Next.js
             </span>{" "}
             | Currently working as a backend-focused full stack developer.
