@@ -2,7 +2,7 @@
 
 import Marquee from "react-fast-marquee";
 import TechCard from "./CardDetails";
-import { techSliderImage } from "../../../../public/imageUrl";
+import { techSliderImage } from "../../../public/imageUrl";
 
 const TechSlider = () => {
   return (

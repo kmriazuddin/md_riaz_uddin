@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/SPfVCLw/coding.jpg",
+    "title": "Modern Portfolio Website",
+    "description": "This modern portfolio website is a fully responsive and professionally designed platform created to showcase personal branding, skills, and projects in an elegant and interactive way. Built using Next.js, Tailwind CSS, and Framer Motion, the website delivers smooth animations, fast performance, and an easy browsing experience. The homepage includes an animated hero section, highlighted skills, and interactive buttons that guide users to different areas of the site. The project section features a clean grid layout with hover effects and modal previews, allowing visitors to explore work details without leaving the page. The contact area includes a working form and integrated social links for seamless communication. With server-side rendering, image optimization, and clean code structure, the portfolio loads fast and scores high on SEO and performance metrics. Every design element—from typography to color patterns—has been carefully crafted to ensure a professional appearance across all devices. This portfolio is ideal for developers, designers, freelancers, or anyone wanting to build a strong online presence with a modern, visually engaging, and scalable website.",
+    "features": "Unlimited hearts, exclusive videos, more rewards, ads for extra hearts",
+    "technology": [
+      {
+        "language": "javascript, typescript",
+        "framework": "react.js, Next.js",
+        "ui": "Slider, react icon",
+        "backend": "node.js, express.js",
+        "database": "mongoDB",
+        "orm": "prisma",
+        "validation": "zod",
+        "fileUploader": "multer, imgbb"
+      }
+    ],
+    "github": "https://github.com/kmriazuddin/BUBT-Hostel-System.git"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/NZrzk9Z/Mac-Book-Pro.png",
+    "title": "E-Commerce Dashboard",
+    "description": "This E-Commerce Dashboard is a comprehensive and user-friendly management system built with React and TypeScript to help store owners efficiently control all aspects of their online business. It includes real-time analytics, sales charts, revenue tracking, and product management tools presented through a modern and clean interface. Administrators can add, edit, or delete products, manage categories, monitor low stock alerts, and track customer orders. The dashboard also features advanced filtering options and data visualization components for better decision-making. With responsive design, it works smoothly across desktops, tablets, and mobile devices. Every form is validated for error-free input, and protected routes ensure secure access to sensitive information. The system runs smoothly even with large datasets, thanks to optimized rendering and reusable components. Whether the goal is tracking sales trends, reviewing customer activity, or managing inventory, this dashboard offers everything needed to operate an online store with speed, accuracy, and convenience.",
+    "features": "Unlimited hearts, exclusive videos, more rewards, ads for extra hearts",
+    "technology": [
+      {
+        "language": "javascript, typescript",
+        "framework": "react.js, Next.js",
+        "ui": "Slider, react icon",
+        "backend": "node.js, express.js",
+        "database": "mongoDB",
+        "orm": "prisma",
+        "validation": "zod",
+        "fileUploader": "multer, imgbb"
+      }
+    ],
+    "github": "https://github.com/kmriazuddin/l2A4-Online-Shop-Client.git"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/kVXctGND/bubtq.jpg",
+    "title": "BUBT Hostel Management System",
+    "description": "The BUBT Hostel Management System is a modern web application designed to simplify and digitize hostel operations for students and administrators. Built with React, TypeScript, Node.js, and MongoDB, the system provides tools for managing room allocations, student registrations, fee tracking, and daily attendance in an efficient and organized manner. Students can log in to view their room details, payment history, announcements, and submit complaints or maintenance requests directly through the platform. Administrators have access to a dashboard that displays occupancy statistics, pending issues, fee updates, and visitor logs. The system includes secure authentication, role-based access, and mobile responsiveness to ensure smooth usage across different devices. With clean UI design and structured APIs, the platform ensures fast performance and easy navigation. It significantly reduces paperwork, improves communication, and helps maintain a more transparent hostel environment for both students and staff.",
+    "features": "Unlimited hearts, exclusive videos, more rewards, ads for extra hearts",
+    "technology": [
+      {
+        "language": "javascript, typescript",
+        "framework": "react.js, Next.js",
+        "ui": "Slider, react icon",
+        "backend": "node.js, express.js",
+        "database": "mongoDB",
+        "orm": "prisma",
+        "validation": "zod",
+        "fileUploader": "multer, imgbb"
+      }
+    ],
+    "github": "https://github.com/kmriazuddin/BUBT-Hostel-System.git"
+  }
+]

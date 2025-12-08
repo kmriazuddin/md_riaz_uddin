@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { codingImageUrl } from "../../../../public/imageUrl";
+import { codingImageUrl } from "../../../public/imageUrl";
 import { FcIdea } from "react-icons/fc";
 
 const HomePage = () => {
