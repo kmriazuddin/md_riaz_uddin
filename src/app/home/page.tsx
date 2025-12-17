@@ -35,7 +35,10 @@ const HomePage = () => {
           <p className="text-md md:text-lg text-justify text-slate-950 dark:text-white">
             I am a skilled full-stack developer with a strong focus on
             delivering exceptional front-end experiences and reliable back-end
-            solutions...
+            solutions. I specialize in building robust and scalable web
+            applications, combining technical expertise with a keen eye for
+            design and usability to create seamless, high-quality digital
+            products...
           </p>
 
           <p className="text-md md:text-lg text-justify text-slate-950 dark:text-white leading-8">

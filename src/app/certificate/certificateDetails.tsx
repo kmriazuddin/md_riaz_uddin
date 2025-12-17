@@ -3,6 +3,7 @@
 import Container from "@/components/ui/container";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -52,7 +53,7 @@ const CertificateDetails = ({
         <h1 className="text-center text-slate-900 dark:text-white text-2xl lg:text-4xl dancing-script font-semibold">
           Programming Achievement
         </h1>
-        <p className="text-center mt-3">
+        <p className="text-center text-slate-500 dark:text-gray-300 mt-3">
           I think these certificates are a part of my life, because their real
           value lies in what I can do with these skills.
         </p>
@@ -89,7 +90,7 @@ const CertificateDetails = ({
                     }}
                     className="absolute inset-0 origin-bottom"
                   >
-                    <a href={item.link} target="_blank">
+                    <Link href={item.link} target="_blank">
                       <div className="relative">
                         <Image
                           src={item.src}
@@ -97,11 +98,11 @@ const CertificateDetails = ({
                           width={500}
                           height={600}
                           draggable={false}
-                          className="w-full rounded-2xl object-cover object-center md:h-[350px] h-[250px]"
+                          className="w-full rounded-2xl shadow-2xl object-cover object-center md:h-[350px] h-[250px]"
                         />
-                        <div className="absolute bg-black/20 inset-0 "></div>
+                        {/* <div className="absolute bg-black/20 inset-0 "></div> */}
                       </div>
-                    </a>
+                    </Link>
                   </motion.div>
                 ))}
               </AnimatePresence>

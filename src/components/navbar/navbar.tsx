@@ -5,8 +5,8 @@ import { navLinks } from "./navLink";
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-white shadow-md">
-      <div className="sticky top-0 z-50 navbar max-w-7xl mx-auto">
+    <div className="sticky top-0 z-9999 bg-slate-100 dark:bg-slate-950 shadow-md">
+      <div className="navbar max-w-7xl mx-auto text-slate-900 dark:text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,7 +59,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-10">
-          <Link href="" className="hidden lg:inline-block">
+          <Link
+            href="https://drive.google.com/file/d/16AiIrCWwH6-pUZUpUrWccL9E_6_Dsh1z/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-block"
+          >
             <Button>Resume</Button>
           </Link>
           <ModeToggle />

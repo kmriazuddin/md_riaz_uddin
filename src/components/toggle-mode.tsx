@@ -26,7 +26,7 @@ export function ModeToggle() {
       <DropdownMenuContent
         align="end"
         className={`${
-          theme === "light" ? "bg-slate-100" : "bg-slate-950"
+          theme === "light" ? "bg-slate-100 z-9999" : "bg-slate-950 z-9999"
         } text-slate-950 dark:text-white border-none`}
       >
         <DropdownMenuItem onClick={() => setTheme("light")}>

@@ -6,6 +6,7 @@ import PoweredBy from "./poweredBy/page";
 import AboutMe from "./aboutMe/page";
 import Projects from "./projects/page";
 import Certificate from "./certificate/page";
+import Blogs from "./blogs/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Projects />
       <Certificate />
       <PoweredBy />
+      <Blogs />
       <Footer />
     </div>
   );
