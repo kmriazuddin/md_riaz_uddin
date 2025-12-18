@@ -11,7 +11,7 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
       {data.map((project, i) => (
         <div
           key={i}
-          className="card bg-gray-400 dark:bg-slate-900 w-96 shadow-sm rounded-xl p-3"
+          className="card bg-gray-400 dark:bg-slate-900 w-96 shadow-sm rounded-xl p-3 mx-auto"
         >
           {/* Image click → Project page */}
           <Link href={`/projects/${project.id}`}>

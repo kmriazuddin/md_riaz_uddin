@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 import { Blogs } from "./type";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -23,9 +22,11 @@ const Card = ({ project }: { project: Blogs }) => {
       />
 
       <div className="p-5 space-y-3">
-        <h2 className="text-xl font-semibold text-white">{project.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-white">
+          {project.title}
+        </h2>
 
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-800 dark:text-slate-300">
           {project.description.length > 90
             ? project.description.slice(0, 90) + "..."
             : project.description}
@@ -34,7 +35,7 @@ const Card = ({ project }: { project: Blogs }) => {
         <Link
           href={project.documentation}
           target="_blank"
-          className="inline-flex items-start gap-2 text-purple-400 hover:underline"
+          className="inline-flex items-start gap-1 text-purple-400 hover:underline"
         >
           Documentation
           <MdArrowOutward />

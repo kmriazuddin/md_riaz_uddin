@@ -7,6 +7,7 @@ import AboutMe from "./aboutMe/page";
 import Projects from "./projects/page";
 import Certificate from "./certificate/page";
 import Blogs from "./blogs/page";
+import CodingProgress from "./codingProgress/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Certificate />
       <PoweredBy />
       <Blogs />
+      <CodingProgress />
       <Footer />
     </div>
   );

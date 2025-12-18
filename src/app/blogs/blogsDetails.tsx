@@ -25,7 +25,7 @@ const BlogsDetails = ({ data }: { data: Blogs[] }) => {
             onClick={handlePrev}
             className="h-10 w-10 border border-[rgb(230,153,58)] rounded flex items-center justify-center transition cursor-pointer"
           >
-            <FaArrowLeft />
+            <FaArrowLeft className="text-slate-950 dark:text-white" />
           </button>
           <button
             onClick={handleNext}
