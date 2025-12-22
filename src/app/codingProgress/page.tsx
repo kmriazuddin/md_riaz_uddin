@@ -22,11 +22,17 @@ const CodingProgress = () => {
               Time
             </span>
           </h1>
-          <div className="bg-gray-200 dark:bg-slate-900 rounded-2xl mt-10">
+          <div className="bg-slate-800 dark:bg-slate-900 rounded-2xl mt-10">
             <div className="stats stats-vertical lg:stats-horizontal shadow">
               <div className="stat">
                 <div className="stat-title">Active Code Time</div>
-                <div className="stat-value text-white">31H</div>
+                <div className="stat-value text-white flex">
+                  <h1>1110.58H</h1>
+                  <span className="relative flex size-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                  </span>
+                </div>
                 <div className="stat-desc flex">
                   Aug 29, 2022 - <CurrentDate />
                 </div>

@@ -8,6 +8,7 @@ import Projects from "./projects/page";
 import Certificate from "./certificate/page";
 import Blogs from "./blogs/page";
 import CodingProgress from "./codingProgress/page";
+import WorkExperience from "./workExperience/page";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <PoweredBy />
       <Blogs />
       <CodingProgress />
+      <WorkExperience />
       <Footer />
     </div>
   );

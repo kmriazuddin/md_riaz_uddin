@@ -13,10 +13,10 @@ const HomePage = () => {
         {/* Image Section */}
         <div>
           <Image
-            src={codingImageUrl}
-            width={800}
+            src="/programmer.png"
+            width={700}
             height={500}
-            alt="Programming"
+            alt="programmer"
             className="rounded-md"
           />
         </div>
