@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { codingImageUrl } from "../../../public/imageUrl";
 import { FcIdea } from "react-icons/fc";
 
 const HomePage = () => {
@@ -11,11 +10,11 @@ const HomePage = () => {
       </div>
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
         {/* Image Section */}
-        <div>
+        <div className="w-96 md:w-7xl">
           <Image
             src="/programmer.png"
-            width={700}
-            height={500}
+            width={600}
+            height={600}
             alt="programmer"
             className="rounded-md"
           />

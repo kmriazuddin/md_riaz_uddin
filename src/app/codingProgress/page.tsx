@@ -3,8 +3,8 @@ import CurrentDate from "./date";
 
 const CodingProgress = () => {
   return (
-    <div>
-      <div className="relative flex h-full md:h-80 w-full justify-center bg-white dark:bg-slate-950">
+    <div className="bg-white dark:bg-slate-950">
+      <div className="relative flex h-full w-full justify-center">
         <div
           className={cn(
             "absolute inset-0",
@@ -15,15 +15,15 @@ const CodingProgress = () => {
         />
         {/* Radial gradient for the container to give a faded look */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-slate-950 "></div>
-        <div className="relative z-20 bg-linear-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 font-bold text-transparent">
+        <div className="relative z-20 bg-linear-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 md:py-14 font-bold text-transparent">
           <h1 className="text-center text-slate-900 dark:text-white text-2xl lg:text-4xl dancing-script font-semibold">
             Live Coding{" "}
             <span className="px-1 rounded-sm bg-linear-to-r from-[rgb(125,51,204)] to-[rgb(230,153,58)]">
               Time
             </span>
           </h1>
-          <div className="bg-slate-800 dark:bg-slate-900 rounded-2xl mt-10">
-            <div className="stats stats-vertical lg:stats-horizontal shadow">
+          <div className="bg-slate-800 dark:bg-slate-900 rounded-2xl mt-10 w-80 md:w-full">
+            <div className="stats stats-vertical lg:stats-horizontal">
               <div className="stat">
                 <div className="stat-title">Active Code Time</div>
                 <div className="stat-value text-white flex">
