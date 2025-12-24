@@ -11,7 +11,8 @@ type Technology = {
 
 type Project = {
   id: number;
-  image: string;
+  thumbnails: string;
+  images?: string;
   title: string;
   description: string;
   features: string;

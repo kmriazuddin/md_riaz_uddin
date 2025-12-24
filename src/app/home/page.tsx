@@ -11,12 +11,14 @@ const HomePage = () => {
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
         {/* Image Section */}
         <div className="w-96 md:w-7xl">
+          {/* Image with src "/programmer.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold. */}
           <Image
             src="/programmer.png"
             width={600}
             height={600}
             alt="programmer"
             className="rounded-md"
+            loading="eager"
           />
         </div>
 

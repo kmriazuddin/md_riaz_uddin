@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SingleProjectSlide from "../components/singleProjectSlide";
 
 type ProjectPageProps = {
   params: {
@@ -8,7 +9,8 @@ type ProjectPageProps = {
 
 type Project = {
   id: number;
-  image: string;
+  thumbnails: string;
+  images?: string;
   title: string;
   description: string;
   features: string;
@@ -32,11 +34,9 @@ const page = async ({ params }: ProjectPageProps) => {
     cache: "no-store",
   });
   const data = await res.json();
-  const pDa = await params;
+  const ProjectData = await params;
 
-  console.log("par", pDa);
-
-  const project = data.find((p: Project) => p.id === Number(pDa.id));
+  const project = data.find((p: Project) => p.id === Number(ProjectData.id));
 
   if (!project) {
     return <h1 className="text-center text-2xl p-10">Project Not Found</h1>;
@@ -44,19 +44,11 @@ const page = async ({ params }: ProjectPageProps) => {
 
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-6">
+      <div className="">
+        <SingleProjectSlide images={project.images || []} />
+      </div>
       {/* Title */}
       <h1 className="text-3xl font-bold">{project.title}</h1>
-
-      {/* Image */}
-      <div className="">
-        <Image
-          src={project.image}
-          width={500}
-          height={500}
-          alt={project.title}
-          className="w-6/12 object-contain mt-2 rounded-xl shadow-md"
-        />
-      </div>
 
       {/* Description */}
       <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">

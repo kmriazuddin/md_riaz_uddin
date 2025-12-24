@@ -17,7 +17,7 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
           <Link href={`/projects/${project.id}`}>
             <figure className="w-full h-60 overflow-hidden p-5 cursor-pointer">
               <Image
-                src={project.image}
+                src={project.thumbnails}
                 alt="Project"
                 width={500}
                 height={500}
