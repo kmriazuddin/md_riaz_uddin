@@ -11,7 +11,7 @@ type SingleProjectProps = {
 const SingleProjectSlide = ({ images }: SingleProjectProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Valid images filter (খালি বা invalid URL রিমুভ)
+  // Valid images filter
   const validImages = images.filter(
     (img): img is string =>
       typeof img === "string" && img.trim() !== "" && img.startsWith("http")
@@ -29,7 +29,7 @@ const SingleProjectSlide = ({ images }: SingleProjectProps) => {
     setCurrentIndex(index);
   };
 
-  // Auto slide - সঠিক উপায়ে (বাগ ফিক্সড)
+  // Auto slide
   useEffect(() => {
     if (validImages.length <= 1) return;
 
@@ -43,8 +43,8 @@ const SingleProjectSlide = ({ images }: SingleProjectProps) => {
   // No images
   if (validImages.length === 0) {
     return (
-      <div className="w-full h-96 bg-gray-200 rounded-xl flex items-center justify-center">
-        <p className="text-gray-500 text-lg">No images available</p>
+      <div className="w-full h-96 bg-gray-200 dark:bg-slate-950 rounded-xl flex items-center justify-center">
+        <p className="text-slate-500 dark:text-gray-500 text-lg">No images available.</p>
       </div>
     );
   }
@@ -71,14 +71,14 @@ const SingleProjectSlide = ({ images }: SingleProjectProps) => {
                   className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all z-10"
                   aria-label="Previous image"
                 >
-                  <ChevronLeft size={32} />
+                  <ChevronLeft className="w-3 h-3 md:w-6 md:h-6" />
                 </button>
                 <button
                   onClick={nextSlide}
                   className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all z-10"
                   aria-label="Next image"
                 >
-                  <ChevronRight size={32} />
+                  <ChevronRight className="w-3 h-3 md:w-6 md:h-6" />
                 </button>
               </>
             )}

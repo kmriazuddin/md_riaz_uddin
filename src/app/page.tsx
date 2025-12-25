@@ -13,7 +13,7 @@ import WorkExperience from "./workExperience/page";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomePage />
       <AboutMe />
       <TechSlider />

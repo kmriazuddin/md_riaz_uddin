@@ -21,7 +21,12 @@ const Certificate = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  if (data.length === 0) return <p>Loading...</p>;
+  if (data.length === 0)
+    return (
+      <div className="flex justify-center items-center bg-white dark:bg-slate-950">
+        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-pink-500"></div>
+      </div>
+    );
 
   return (
     <div className="relative overflow-hidden">

@@ -5,7 +5,9 @@
     "images": [
       "https://i.ibb.co.com/7XNcpn6/458727785-1641828363265694-611742323748220429-n.jpg",
       "https://i.ibb.co.com/rcJYbb0/400556815-306846765530740-5563078099683847899-n.jpg",
-      "https://i.ibb.co.com/C9wb3FB/400273141-306846852197398-8166804837349026743-n.jpg"
+      "https://i.ibb.co.com/C9wb3FB/400273141-306846852197398-8166804837349026743-n.jpg",
+      "https://i.ibb.co.com/rcJYbb0/400556815-306846765530740-5563078099683847899-n.jpg",
+      "https://i.ibb.co.com/7XNcpn6/458727785-1641828363265694-611742323748220429-n.jpg"
     ],
     "title": "Modern Portfolio Website",
     "description": "This modern portfolio website is a fully responsive and professionally designed platform created to showcase personal branding, skills, and projects in an elegant and interactive way. Built using Next.js, Tailwind CSS, and Framer Motion, the website delivers smooth animations, fast performance, and an easy browsing experience. The homepage includes an animated hero section, highlighted skills, and interactive buttons that guide users to different areas of the site. The project section features a clean grid layout with hover effects and modal previews, allowing visitors to explore work details without leaving the page. The contact area includes a working form and integrated social links for seamless communication. With server-side rendering, image optimization, and clean code structure, the portfolio loads fast and scores high on SEO and performance metrics. Every design element—from typography to color patterns—has been carefully crafted to ensure a professional appearance across all devices. This portfolio is ideal for developers, designers, freelancers, or anyone wanting to build a strong online presence with a modern, visually engaging, and scalable website.",
