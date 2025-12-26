@@ -9,7 +9,7 @@ type Technology = {
   fileUploader: string;
 };
 
-type Project = {
+export type Project = {
   id: number;
   thumbnails: string;
   images?: string;
@@ -17,7 +17,8 @@ type Project = {
   description: string;
   features: string;
   technology: Technology[];
-  github: string;
+  github?: string[];
+  liveSite?: string;
 };
 
 export type ProjectCardProps = {

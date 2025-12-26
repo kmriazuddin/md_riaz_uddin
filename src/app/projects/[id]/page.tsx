@@ -1,30 +1,14 @@
+import Link from "next/link";
 import SingleProjectSlide from "../components/singleProjectSlide";
+import { FaGithub } from "react-icons/fa";
+import { BsArrowUpRightSquareFill } from "react-icons/bs";
+import { Project } from "../components/types";
+// import { Project } from "../components/types";
 
 type ProjectPageProps = {
   params: {
     id: string;
   };
-};
-
-type Project = {
-  id: number;
-  thumbnails: string;
-  images?: string;
-  title: string;
-  description: string;
-  features: string;
-  technology: Technology;
-};
-
-type Technology = {
-  language: string;
-  framework: string;
-  ui: string;
-  backend: string;
-  database: string;
-  orm: string;
-  validation: string;
-  fileUploader: string;
 };
 
 const page = async ({ params }: ProjectPageProps) => {
@@ -38,7 +22,7 @@ const page = async ({ params }: ProjectPageProps) => {
   const project = data.find((p: Project) => p.id === Number(ProjectData.id));
 
   if (!project) {
-    return <h1 className="text-center text-2xl p-10">Project Not Found</h1>;
+    return <h1 className="text-center text-2xl p-10">Project Not Found!</h1>;
   }
 
   return (
@@ -57,20 +41,94 @@ const page = async ({ params }: ProjectPageProps) => {
         <div className="">
           <SingleProjectSlide images={project.images || []} />
         </div>
+        <div className="flex gap-5">
+          {/* GitHub */}
+          {project.github?.map((pro: string, idx: number) => (
+            <Link
+              href={pro}
+              key={idx}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="relative inline-flex h-8 active:scale-95 transition overflow-hidden rounded-lg p-px">
+                <span
+                  className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] 
+            bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"
+                ></span>
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-2 text-sm font-medium text-white backdrop-blur-3xl gap-2 undefined">
+                  GitHub
+                  <FaGithub />
+                </span>
+              </button>
+            </Link>
+          ))}
+          {/* Live Website */}
+          <Link
+            href={project?.liveSite}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="relative inline-flex h-8 active:scale-95 transition overflow-hidden rounded-lg p-px">
+              <span
+                className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] 
+            bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"
+              ></span>
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-2 text-sm font-medium text-white backdrop-blur-3xl gap-2 undefined">
+                Website
+                <BsArrowUpRightSquareFill />
+              </span>
+            </button>
+          </Link>
+        </div>
         {/* Title */}
-        <h1 className="text-3xl font-bold text-slate-950 dark:text-white underline decoration-wavy decoration-gray-600 underline-offset-4">
+        <h1 className="text-xl md:text-3xl font-bold text-slate-950 dark:text-white underline decoration-wavy decoration-gray-600 underline-offset-4">
           {project.title}
         </h1>
-
         {/* Description */}
-        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+        <p className="text-gray-700 dark:text-gray-300 text-sm md:text-lg leading-relaxed text-justify">
           {project.description}
         </p>
-
         {/* Features */}
         <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-xl">
-          <h2 className="font-semibold text-xl mb-2">Features</h2>
+          <h2 className="font-semibold text-xl mb-2 text-slate-950 dark:text-white">Features</h2>
           <p className="text-gray-600 dark:text-gray-300">{project.features}</p>
+        </div>
+        {/* Technology */}
+        <div className="mt-4 space-y-2">
+          {project.technology.map((tech: any, index:number) => (
+            <ul
+              key={index}
+              className="text-sm text-slate-400 space-y-1 flex flex-wrap gap-2"
+            >
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Language:</span> {tech.language}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Framework:</span>{" "}
+                {tech.framework}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">UI:</span> {tech.ui}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Backend:</span> {tech.backend}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Database:</span> {tech.database}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">ORM:</span> {tech.orm}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Validation:</span>{" "}
+                {tech.validation}
+              </li>
+              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+                <span className="font-semibold">Uploader:</span>{" "}
+                {tech.fileUploader}
+              </li>
+            </ul>
+          ))}
         </div>
       </div>
     </div>
