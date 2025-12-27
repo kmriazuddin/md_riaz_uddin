@@ -98,32 +98,32 @@ const page = async ({ params }: ProjectPageProps) => {
           {project.technology.map((tech: any, index:number) => (
             <ul
               key={index}
-              className="text-sm text-slate-400 space-y-1 flex flex-wrap gap-2"
+              className="text-sm text-slate-400 flex flex-wrap gap-2"
             >
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Language:</span> {tech.language}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Framework:</span>{" "}
                 {tech.framework}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">UI:</span> {tech.ui}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Backend:</span> {tech.backend}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Database:</span> {tech.database}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">ORM:</span> {tech.orm}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Validation:</span>{" "}
                 {tech.validation}
               </li>
-              <li className="px-3 py-1 text-xs rounded-full bg-slate-800 text-white">
+              <li className="p-2 text-xs rounded-md bg-slate-800 text-white">
                 <span className="font-semibold">Uploader:</span>{" "}
                 {tech.fileUploader}
               </li>
