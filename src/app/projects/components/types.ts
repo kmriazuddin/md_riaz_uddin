@@ -1,4 +1,4 @@
-type Technology = {
+export type Technology = {
   language: string;
   framework: string;
   ui: string;
@@ -17,8 +17,8 @@ export type Project = {
   description: string;
   features: string;
   technology: Technology[];
-  github?: string[];
-  liveSite?: string;
+  github: string[];
+  liveSite: string;
 };
 
 export type ProjectCardProps = {

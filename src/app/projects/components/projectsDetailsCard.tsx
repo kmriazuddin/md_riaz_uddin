@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectCardProps } from "./types";
-import { FaGithub } from "react-icons/fa";
+import { BsArrowUpRightSquareFill } from "react-icons/bs";
 
 const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
   return (
@@ -28,14 +28,14 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
 
           <div className="card-body pt-0">
             {/* Github Link */}
-            <a
-              href={project.github}
+            <Link
+              href={project.liveSite}
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-end items-center gap-2 text-blue-600 dark:text-blue-400"
             >
-              Github <FaGithub />
-            </a>
+              Website <BsArrowUpRightSquareFill />
+            </Link>
 
             <Link href={`/projects/${project.id}`}>
               <h2 className="card-title text-slate-900 dark:text-white cursor-pointer">

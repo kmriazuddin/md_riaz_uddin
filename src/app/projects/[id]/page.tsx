@@ -2,8 +2,7 @@ import Link from "next/link";
 import SingleProjectSlide from "../components/singleProjectSlide";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
-import { Project } from "../components/types";
-// import { Project } from "../components/types";
+import { Project, Technology } from "../components/types";
 
 type ProjectPageProps = {
   params: {
@@ -90,12 +89,14 @@ const page = async ({ params }: ProjectPageProps) => {
         </p>
         {/* Features */}
         <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-xl">
-          <h2 className="font-semibold text-xl mb-2 text-slate-950 dark:text-white">Features</h2>
+          <h2 className="font-semibold text-xl mb-2 text-slate-950 dark:text-white">
+            Features
+          </h2>
           <p className="text-gray-600 dark:text-gray-300">{project.features}</p>
         </div>
         {/* Technology */}
         <div className="mt-4 space-y-2">
-          {project.technology.map((tech: any, index:number) => (
+          {project.technology?.map((tech: Technology, index: number) => (
             <ul
               key={index}
               className="text-sm text-slate-400 flex flex-wrap gap-2"

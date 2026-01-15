@@ -14,7 +14,7 @@ const Footer = () => {
           <aside className="text-slate-700 dark:text-white">
             <p>
               Copyright © {new Date().getFullYear()} Md Riaz Uddin — All rights
-              reserved
+              reserved.
             </p>
           </aside>
 
