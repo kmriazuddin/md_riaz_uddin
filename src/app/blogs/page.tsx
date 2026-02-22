@@ -1,9 +1,23 @@
-import BlogsDetails from "./blogsDetails";
+"use client";
 
-const Blogs = async () => {
+import { useEffect, useState } from "react";
+import BlogsDetails from "./blogsDetails";
+// import data from "@/data/blogs.json";
+
+const Blogs = () => {
   // const res = await fetch("http://localhost:3000/data/blogs.json");
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/blogs.json`);
-  const data = await res.json();
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/blogs.json`);
+  // const data = await res.json();
+
+  const [data, setBlogs] = useState([]);
+
+  console.log("data", data);
+
+  useEffect(() => {
+    fetch("/data/blogs.json")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data));
+  }, []);
 
   return (
     <div className="relative overflow-hidden py-10 md:py-20 px-6 z-10">
@@ -23,7 +37,7 @@ const Blogs = async () => {
             Thoughts
           </h1>
         </div>
-        <BlogsDetails data={data} />
+          <BlogsDetails data={data} />
       </div>
     </div>
   );

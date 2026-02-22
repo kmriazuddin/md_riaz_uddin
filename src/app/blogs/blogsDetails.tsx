@@ -37,18 +37,24 @@ const BlogsDetails = ({ data }: { data: Blogs[] }) => {
 
         {/* Slider */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* MOBILE → 1 CARD */}
-          <div className="block md:hidden">
-            <Card project={data[index]} />
-          </div>
+          {data.length > 0 ? (
+            <>
+              {/* MOBILE → 1 CARD */}
+              <div className="block md:hidden">
+                <Card project={data[index]} />
+              </div>
 
-          {/* DESKTOP → 3 CARDS */}
-          <div className="hidden md:contents">
-            {[0, 1, 2].map((offset) => {
-              const project = data[(index + offset) % data.length];
-              return <Card key={project.id} project={project} />;
-            })}
-          </div>
+              {/* DESKTOP → 3 CARDS */}
+              <div className="hidden md:contents">
+                {[0, 1, 2].map((offset) => {
+                  const project = data[(index + offset) % data.length];
+                  return <Card key={project.id} project={project} />;
+                })}
+              </div>
+            </>
+          ) : (
+            <p>No blogs available</p>
+          )}
         </div>
       </div>
     </section>
