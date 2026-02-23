@@ -1,11 +1,11 @@
 import AboutMe from "@/app/aboutMe/page";
-import React from "react";
+import Card from "./card";
 
 const MyAbout = () => {
   return (
     <div>
-      {/* <h1>Hello</h1> */}
       <AboutMe />
+      <Card />
     </div>
   );
 };

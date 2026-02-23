@@ -12,7 +12,7 @@ type ProjectPageProps = {
 
 const page = async ({ params }: ProjectPageProps) => {
   // Load JSON file from public
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/projects.json`, {
+  const res = await fetch("http://localhost:3000/projects.json", {
     cache: "no-store",
   });
   const data = await res.json();

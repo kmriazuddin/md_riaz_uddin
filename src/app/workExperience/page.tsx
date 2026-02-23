@@ -1,4 +1,5 @@
 import Image from "next/image";
+import autofybit_logo from "@/assets/image/autofybit_logo.png";
 
 const WorkExperience = () => {
   return (
@@ -48,7 +49,7 @@ const WorkExperience = () => {
             <div className="collapse-title font-semibold grid grid-cols-2 md:grid-cols-4 gap-5">
               <h1>Jan 2024 - Apr 2024</h1>
               <Image
-                src="https://autofy.com.bd/includes/themes/custom/autofybit/img/seo/autofybit_logo_w.webp"
+                src={autofybit_logo}
                 width={100}
                 height={50}
                 alt="autofyBit"
