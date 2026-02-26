@@ -36,7 +36,14 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link href="">Resume</Link>
+                <Link
+                  href="https://drive.google.com/file/d/1tajRWyvxLOI8vs0hAvaJvWaUg75RO451/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:inline-block"
+                >
+                  Resume
+                </Link>
               </li>
             </ul>
           </div>
@@ -60,7 +67,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-10">
           <Link
-            href="https://drive.google.com/file/d/16AiIrCWwH6-pUZUpUrWccL9E_6_Dsh1z/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tajRWyvxLOI8vs0hAvaJvWaUg75RO451/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:inline-block"

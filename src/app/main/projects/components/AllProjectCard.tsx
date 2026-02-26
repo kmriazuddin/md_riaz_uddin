@@ -1,15 +1,14 @@
 "use client";
 
+import { ProjectCardProps } from "@/app/projects/components/types";
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectCardProps } from "./types";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
 
-const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
-  const projectData = data.slice(0, 3);
+const AllProjectCard = ({ data }: ProjectCardProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {projectData.map((project, i) => (
+      {data.map((project, i) => (
         <div
           key={i}
           className="card bg-gray-400 dark:bg-slate-900 w-96 shadow-sm rounded-xl p-3 mx-auto"
@@ -56,4 +55,4 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
   );
 };
 
-export default ProjectsDetailsCard;
+export default AllProjectCard;
