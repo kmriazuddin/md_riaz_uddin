@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import ContactDetails from "./contactDetails";
 

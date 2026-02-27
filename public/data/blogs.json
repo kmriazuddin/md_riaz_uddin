@@ -33,5 +33,19 @@
     "title": "Portfolio Website",
     "description": "Personal portfolio built with Next.js and Motion animations.",
     "documentation": "https://github.com/yourname/project-four"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/BNzD40c/romance2.jpg",
+    "title": "Portfolio Website",
+    "description": "Personal portfolio built with Next.js and Motion animations.",
+    "documentation": "https://github.com/yourname/project-four"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/BNzD40c/romance2.jpg",
+    "title": "Portfolio Website",
+    "description": "Personal portfolio built with Next.js and Motion animations.",
+    "documentation": "https://github.com/yourname/project-four"
   }
 ]
