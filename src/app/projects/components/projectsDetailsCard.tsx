@@ -12,7 +12,7 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
       {projectData.map((project, i) => (
         <div
           key={i}
-          className="card bg-gray-400 dark:bg-slate-900 w-96 shadow-sm rounded-xl p-3 mx-auto"
+          className="card bg-slate-700 dark:bg-slate-900 w-96 rounded-[10px] shadow-[1px_1px_5px_#aaaaaa,-1px_-1px_5px_#ffffff] hover:scale-[1.02] dark:shadow-none transition p-3 mx-auto"
         >
           {/* Image click → Project page */}
           <Link href={`/projects/${project.id}`}>
@@ -39,12 +39,12 @@ const ProjectsDetailsCard = ({ data }: ProjectCardProps) => {
             </Link>
 
             <Link href={`/projects/${project.id}`}>
-              <h2 className="card-title text-slate-900 dark:text-white cursor-pointer">
+              <h2 className="card-title text-white cursor-pointer">
                 {project.title}
               </h2>
             </Link>
 
-            <p className="text-slate-900 dark:text-slate-400">
+            <p className="text-slate-400">
               {project.description.length > 90
                 ? project.description.slice(0, 140) + "..."
                 : project.description}

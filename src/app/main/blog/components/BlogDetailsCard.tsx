@@ -1,10 +1,10 @@
+import { Blogs } from "@/app/blogs/type";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Blogs } from "./type";
 import { MdArrowOutward } from "react-icons/md";
 
-const Card = ({ project }: { project: Blogs }) => {
+const BlogDetailsCard = ({ project }: { project: Blogs }) => {
   return (
     <motion.div
       key={project.id}
@@ -14,7 +14,7 @@ const Card = ({ project }: { project: Blogs }) => {
       className="bg-slate-700 dark:bg-slate-900 p-4 rounded-[10px] shadow-[1px_1px_5px_#aaaaaa,-1px_-1px_5px_#ffffff] hover:scale-[1.02] dark:shadow-none transition"
     >
       <Image
-        src={project.image}
+        src={project.thumbnails}
         alt={project.title}
         width={400}
         height={500}
@@ -41,4 +41,4 @@ const Card = ({ project }: { project: Blogs }) => {
   );
 };
 
-export default Card;
+export default BlogDetailsCard;

@@ -16,21 +16,21 @@ const Card = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 p-10">
-          <div className="bg-gray-400 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
+          <div className="bg-slate-700 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
             <Lottie animationData={programming} className="w-20 h-20" />
-            <h1 className="text-gray-800 dark:text-gray-400">Programming</h1>
+            <h1 className="text-gray-400">Programming</h1>
           </div>
-          <div className="bg-gray-400 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
+          <div className="bg-slate-700 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
             <Lottie animationData={travel} className="w-20 h-20" />
-            <h1 className="text-gray-800 dark:text-gray-400">Travel</h1>
+            <h1 className="text-gray-400">Travel</h1>
           </div>
-          <div className="bg-gray-400 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
+          <div className="bg-slate-700 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
             <Lottie animationData={entertainment} className="w-20 h-20" />
-            <h1 className="text-gray-800 dark:text-gray-400">Entertainment</h1>
+            <h1 className="text-gray-400">Entertainment</h1>
           </div>
-          <div className="bg-gray-400 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
+          <div className="bg-slate-700 dark:bg-slate-900 h-40 rounded-lg flex flex-col justify-center items-center">
             <Lottie animationData={sleep} className="w-20 h-20" />
-            <h1 className="text-gray-800 dark:text-gray-400">Sleep</h1>
+            <h1 className="text-gray-400">Sleep</h1>
           </div>
         </div>
       </div>

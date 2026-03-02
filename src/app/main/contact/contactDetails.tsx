@@ -71,9 +71,9 @@ const ContactDetails = () => {
             }}
           >
             <div className="rounded-xl bg-[#F4E7FB] dark:bg-linear-to-br from-[#0b1220] to-[#071a35] p-8">
-              <h3 className="text-xl font-semibold mb-6 text-slate-950">
+              <h3 className="text-xl font-semibold mb-6 text-slate-950 dark:text-white">
                 Send a Message
-              </h3>{" "}
+              </h3>
               <form className="space-y-5 text-slate-950 dark:text-slate-400">
                 <div className="grid md:grid-cols-2 gap-4">
                   <Input placeholder="Your name" label="NAME" />
