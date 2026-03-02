@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import ProjectsDetailsCard from "./components/projectsDetailsCard";
+import Loading from "../loading";
 
 const Projects = async () => {
   const res = await fetch("http://localhost:3000/projects.json", {
@@ -22,7 +23,7 @@ const Projects = async () => {
           </h1>
         </div>
         <div className="max-w-7xl mx-auto">
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<Loading />}>
             <ProjectsDetailsCard data={data} />
           </Suspense>
         </div>

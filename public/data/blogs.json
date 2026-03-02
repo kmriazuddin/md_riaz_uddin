@@ -2,7 +2,7 @@
   {
     "id": 1,
     "thumbnails": "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg",
       "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg"
     ],
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "thumbnails": "https://i.ibb.co.com/3rSV1x7/romance.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/3rSV1x7/romance.jpg",
       "https://i.ibb.co.com/3rSV1x7/romance.jpg"
     ],
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "thumbnails": "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg",
       "https://i.ibb.co.com/HLjd699S/4ca3e1997ab21578e38679082d274af1.jpg"
     ],
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "thumbnails": "https://i.ibb.co.com/SPfVCLw/coding.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/SPfVCLw/coding.jpg",
       "https://i.ibb.co.com/SPfVCLw/coding.jpg"
     ],
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "thumbnails": "https://i.ibb.co.com/BNzD40c/romance2.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/BNzD40c/romance2.jpg",
       "https://i.ibb.co.com/BNzD40c/romance2.jpg"
     ],
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "thumbnails": "https://i.ibb.co.com/BNzD40c/romance2.jpg",
-    "image": [
+    "images": [
       "https://i.ibb.co.com/BNzD40c/romance2.jpg",
       "https://i.ibb.co.com/BNzD40c/romance2.jpg"
     ],
@@ -68,12 +68,9 @@
   {
     "id": 7,
     "thumbnails": "https://i.ibb.co.com/BNzD40c/romance2.jpg",
-    "image": [
-      "https://i.ibb.co.com/BNzD40c/romance2.jpg",
-      "https://i.ibb.co.com/BNzD40c/romance2.jpg"
-    ],
-    "title": "Portfolio Website",
-    "description": "Personal portfolio built with Next.js and Motion animations.",
+    "images": ["https://i.ibb.co.com/BNzD40c/romance2.jpg"],
+    "title": "🚀 Next.js ডেভেলপমেন্ট স্লো? ডেভ সার্ভার ক্র্যাশ?",
+    "description": "Next.js দিয়ে কাজ করতে গেলেই যদি আপনার ব্রাউজার স্লো হয়ে যায় বা হঠাৎ করে ডেভ সার্ভার বন্ধ হয়ে যায় — তাহলে আপনি একা নন। গত কয়েকদিন ধরেই দেখছি, এই সমস্যা নিয়ে অনেক ডেভেলপারই ভুগছেন। Next.js মূলত তৈরি করেছে Vercel এবং বর্তমানে এর ডেভ সার্ভার অনেক হেভি কাজ একসাথে করে থাকে—যেমন ফাইল ওয়াচ করা, হট রিলোড, সার্ভার কম্পোনেন্ট রেন্ডার করা, টাইপ চেকিং এবং বাণ্ডলিং। এই সবকিছু মিলিয়ে ডেভ মোডে সিস্টেমের উপর চাপ অনেক বেড়ে যায়, যার কারণে মাঝারি কনফিগারেশনের পিসিতেও পারফরম্যান্স সমস্যা দেখা দেয়। এই সমস্যা কিছুটা হলেও কমানোর জন্য আমি যে সেটআপটি ব্যবহার করছি, সেটি নিচে সংক্ষেপে একসাথে বর্ণনা করছি। প্রথমেই CMD, PowerShell অথবা Git Bash টার্মিনাল ওপেন করে npm install -g bun কমান্ডের মাধ্যমে Bun runtime গ্লোবালি ইনস্টল করতে হবে। এরপর আপনার Next.js অ্যাপের package.json ফাইলে গিয়ে scripts সেকশনে থাকা dev: next dev পরিবর্তন করে dev: next dev --turbo সেট করতে হবে। এখানে --turbo ফ্ল্যাগ ব্যবহার করার ফলে নতুন Turbo engine দিয়ে ডেভ সার্ভার রান হয়, যা অনেক ক্ষেত্রে আগের তুলনায় দ্রুত ফাইল প্রসেসিং এবং রিলোড দিতে পারে। এরপর আপনার কোড এডিটরের একটি ছোট কিন্তু গুরুত্বপূর্ণ সেটিং পরিবর্তন করা দরকার। আপনি যদি Microsoft এর Visual Studio Code ব্যবহার করে থাকেন, তাহলে Settings থেকে Auto Save অপশনটি onWindowChange এ সেট করে দিন। কারণ খুব ঘন ঘন ফাইল অটো-সেভ হলে Next.js বারবার রি-কম্পাইল ট্রিগার করে, যা ডেভ সার্ভারের উপর অতিরিক্ত চাপ তৈরি করে এবং পারফরম্যান্স স্লো করে দেয়। আরেকটি গুরুত্বপূর্ণ বিষয় হচ্ছে Console Ninja extension। আপনি যদি এই এক্সটেনশনটি ব্যবহার করে থাকেন, তাহলে আপাতত এটি disable করে রাখাই ভালো। কারণ বর্তমানে Turbo mode এই এক্সটেনশনটি সাপোর্ট করে না। শুধু তাই নয়, অনেক জনপ্রিয় component library-ও এখনো পুরোপুরি Turbo compatible নয়। এসব কারণে dev server অপ্রত্যাশিতভাবে স্লো হয়ে যেতে পারে বা হঠাৎ বন্ধ হয়ে যেতে পারে। এখানে একটি ছোট কিন্তু দরকারি নোট মনে রাখা ভালো—Server Component-এর ভেতরে যদি console.log() ব্যবহার করেন, তাহলে আউটপুট দেখতে পাবেন সেই টার্মিনালে, যেখানে Next.js অ্যাপটি রান হচ্ছে। আর Client Component-এর ক্ষেত্রে console.log() এর আউটপুট দেখা যাবে ব্রাউজারের DevTools console ট্যাবে। সব সেটআপ শেষ করার পর অ্যাপটি ডেভ মোডে চালু করতে হবে bun run dev কমান্ড ব্যবহার করে। আমার অভিজ্ঞতায়, এইভাবে Bun দিয়ে এবং --turbo ফ্ল্যাগ সহ dev server চালালে সাধারণ npm run dev বা next dev এর তুলনায় কিছুটা হলেও ভালো পারফরম্যান্স পাওয়া যায়—বিশেষ করে রিলোড টাইম এবং ফাইল চেঞ্জ ডিটেকশনের ক্ষেত্রে। তবে বাস্তবতা হলো, এই সমাধানটি কোনো ম্যাজিক ফিক্স নয়। যদি এত কিছুর পরেও আপনার ব্রাউজার ফ্রিজ হয়, ডেভ সার্ভার বারবার ক্র্যাশ করে বা পুরো প্রজেক্টই খুব স্লো অনুভূত হয়, তাহলে সবচেয়ে বাস্তবসম্মত সমাধান হচ্ছে আপনার পিসির RAM আপগ্রেড করা। বর্তমান Next.js ডেভেলপমেন্ট এক্সপেরিয়েন্সের জন্য ন্যূনতম 16GB RAM থাকলে সবচেয়ে ভালো এবং স্টেবল পারফরম্যান্স পাওয়া যায়।",
     "documentation": "https://github.com/yourname/project-four"
   }
 ]

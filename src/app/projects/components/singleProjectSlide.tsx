@@ -12,7 +12,7 @@ const SingleProjectSlide = ({ images }: SingleProjectProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Valid images filter
-  const validImages = images.filter(
+  const validImages = images?.filter(
     (img): img is string =>
       typeof img === "string" && img.trim() !== "" && img.startsWith("http")
   );

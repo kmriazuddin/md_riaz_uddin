@@ -1,7 +1,9 @@
-import BlogDetails from "./components/BlogDetails";
+import NavigationBlogDetails from "./components/NavigationBlogDetails";
 
-const Blog = async () => {
-  const res = await fetch("http://localhost:3000/data/blogs.json");
+const NavigationBlog = async () => {
+  const res = await fetch("http://localhost:3000/data/blogs.json", {
+    cache: "no-store",
+  });
   const data = await res.json();
 
   return (
@@ -11,11 +13,11 @@ const Blog = async () => {
           <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
         </div>
         <div>
-          <BlogDetails data={data} />
+          <NavigationBlogDetails data={data} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Blog;
+export default NavigationBlog;
